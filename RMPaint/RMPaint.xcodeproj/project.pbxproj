@@ -1,0 +1,581 @@
+// !$*UTF8*$!
+{
+	archiveVersion = 1;
+	classes = {
+	};
+	objectVersion = 46;
+	objects = {
+
+/* Begin PBXBuildFile section */
+		A027CB52155AA4900025A0DF /* Foundation.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = A027CB51155AA4900025A0DF /* Foundation.framework */; };
+		A027CB60155AA4900025A0DF /* SenTestingKit.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = A027CB5F155AA4900025A0DF /* SenTestingKit.framework */; };
+		A027CB62155AA4900025A0DF /* UIKit.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = A027CB61155AA4900025A0DF /* UIKit.framework */; };
+		A027CB63155AA4900025A0DF /* Foundation.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = A027CB51155AA4900025A0DF /* Foundation.framework */; };
+		A027CB66155AA4900025A0DF /* libRMPaint.a in Frameworks */ = {isa = PBXBuildFile; fileRef = A027CB4E155AA4900025A0DF /* libRMPaint.a */; };
+		A027CB6C155AA4900025A0DF /* InfoPlist.strings in Resources */ = {isa = PBXBuildFile; fileRef = A027CB6A155AA4900025A0DF /* InfoPlist.strings */; };
+		A027CB7F155AA4C90025A0DF /* RMCanvasView.m in Sources */ = {isa = PBXBuildFile; fileRef = A027CB78155AA4C90025A0DF /* RMCanvasView.m */; };
+		A027CB80155AA4C90025A0DF /* RMTouchCanvasView.h in Headers */ = {isa = PBXBuildFile; fileRef = A027CB79155AA4C90025A0DF /* RMTouchCanvasView.h */; settings = {ATTRIBUTES = (Public, ); }; };
+		A027CB81155AA4C90025A0DF /* RMTouchCanvasView.m in Sources */ = {isa = PBXBuildFile; fileRef = A027CB7A155AA4C90025A0DF /* RMTouchCanvasView.m */; };
+		A027CB82155AA4C90025A0DF /* RMPaintStep.h in Headers */ = {isa = PBXBuildFile; fileRef = A027CB7B155AA4C90025A0DF /* RMPaintStep.h */; settings = {ATTRIBUTES = (Public, ); }; };
+		A027CB83155AA4C90025A0DF /* RMPaintStep.m in Sources */ = {isa = PBXBuildFile; fileRef = A027CB7C155AA4C90025A0DF /* RMPaintStep.m */; };
+		A027CB84155AA4C90025A0DF /* RMPaintSession.h in Headers */ = {isa = PBXBuildFile; fileRef = A027CB7D155AA4C90025A0DF /* RMPaintSession.h */; settings = {ATTRIBUTES = (Public, ); }; };
+		A027CB85155AA4C90025A0DF /* RMPaintSession.m in Sources */ = {isa = PBXBuildFile; fileRef = A027CB7E155AA4C90025A0DF /* RMPaintSession.m */; };
+		A027CB87155AA4E00025A0DF /* RMCanvasView.h in Headers */ = {isa = PBXBuildFile; fileRef = A027CB86155AA4E00025A0DF /* RMCanvasView.h */; settings = {ATTRIBUTES = (Public, ); }; };
+		A027CB8E155AA6720025A0DF /* UIKit.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = A027CB61155AA4900025A0DF /* UIKit.framework */; };
+		A027CB8F155AA6720025A0DF /* Foundation.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = A027CB51155AA4900025A0DF /* Foundation.framework */; };
+		A027CB91155AA6720025A0DF /* CoreGraphics.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = A027CB90155AA6720025A0DF /* CoreGraphics.framework */; };
+		A027CB97155AA6730025A0DF /* InfoPlist.strings in Resources */ = {isa = PBXBuildFile; fileRef = A027CB95155AA6730025A0DF /* InfoPlist.strings */; };
+		A027CB99155AA6730025A0DF /* main.m in Sources */ = {isa = PBXBuildFile; fileRef = A027CB98155AA6730025A0DF /* main.m */; };
+		A027CB9D155AA6730025A0DF /* RMAppDelegate.m in Sources */ = {isa = PBXBuildFile; fileRef = A027CB9C155AA6730025A0DF /* RMAppDelegate.m */; };
+		A027CBA0155AA6730025A0DF /* RMViewController.m in Sources */ = {isa = PBXBuildFile; fileRef = A027CB9F155AA6730025A0DF /* RMViewController.m */; };
+		A027CBAB155AA7CA0025A0DF /* brush.png in Resources */ = {isa = PBXBuildFile; fileRef = A027CBAA155AA7CA0025A0DF /* brush.png */; };
+		A027CBAC155AA7F80025A0DF /* libRMPaint.a in Frameworks */ = {isa = PBXBuildFile; fileRef = A027CB4E155AA4900025A0DF /* libRMPaint.a */; };
+		A027CBAE155AA9280025A0DF /* OpenGLES.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = A027CBAD155AA9280025A0DF /* OpenGLES.framework */; };
+		A027CBB0155AA9360025A0DF /* QuartzCore.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = A027CBAF155AA9360025A0DF /* QuartzCore.framework */; };
+		A027CBB1155AA9460025A0DF /* OpenGLES.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = A027CBAD155AA9280025A0DF /* OpenGLES.framework */; };
+		A027CBB2155AA94B0025A0DF /* QuartzCore.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = A027CBAF155AA9360025A0DF /* QuartzCore.framework */; };
+/* End PBXBuildFile section */
+
+/* Begin PBXContainerItemProxy section */
+		A027CB64155AA4900025A0DF /* PBXContainerItemProxy */ = {
+			isa = PBXContainerItemProxy;
+			containerPortal = A027CB45155AA4900025A0DF /* Project object */;
+			proxyType = 1;
+			remoteGlobalIDString = A027CB4D155AA4900025A0DF;
+			remoteInfo = RMPaint;
+		};
+/* End PBXContainerItemProxy section */
+
+/* Begin PBXFileReference section */
+		A027CB4E155AA4900025A0DF /* libRMPaint.a */ = {isa = PBXFileReference; explicitFileType = archive.ar; includeInIndex = 0; path = libRMPaint.a; sourceTree = BUILT_PRODUCTS_DIR; };
+		A027CB51155AA4900025A0DF /* Foundation.framework */ = {isa = PBXFileReference; lastKnownFileType = wrapper.framework; name = Foundation.framework; path = System/Library/Frameworks/Foundation.framework; sourceTree = SDKROOT; };
+		A027CB55155AA4900025A0DF /* RMPaint-Prefix.pch */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.h; path = "RMPaint-Prefix.pch"; sourceTree = "<group>"; };
+		A027CB5E155AA4900025A0DF /* RMPaintTests.octest */ = {isa = PBXFileReference; explicitFileType = wrapper.cfbundle; includeInIndex = 0; path = RMPaintTests.octest; sourceTree = BUILT_PRODUCTS_DIR; };
+		A027CB5F155AA4900025A0DF /* SenTestingKit.framework */ = {isa = PBXFileReference; lastKnownFileType = wrapper.framework; name = SenTestingKit.framework; path = Library/Frameworks/SenTestingKit.framework; sourceTree = DEVELOPER_DIR; };
+		A027CB61155AA4900025A0DF /* UIKit.framework */ = {isa = PBXFileReference; lastKnownFileType = wrapper.framework; name = UIKit.framework; path = Library/Frameworks/UIKit.framework; sourceTree = DEVELOPER_DIR; };
+		A027CB69155AA4900025A0DF /* RMPaintTests-Info.plist */ = {isa = PBXFileReference; lastKnownFileType = text.plist.xml; path = "RMPaintTests-Info.plist"; sourceTree = "<group>"; };
+		A027CB6B155AA4900025A0DF /* en */ = {isa = PBXFileReference; lastKnownFileType = text.plist.strings; name = en; path = en.lproj/InfoPlist.strings; sourceTree = "<group>"; };
+		A027CB78155AA4C90025A0DF /* RMCanvasView.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = RMCanvasView.m; sourceTree = "<group>"; };
+		A027CB79155AA4C90025A0DF /* RMTouchCanvasView.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = RMTouchCanvasView.h; sourceTree = "<group>"; };
+		A027CB7A155AA4C90025A0DF /* RMTouchCanvasView.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = RMTouchCanvasView.m; sourceTree = "<group>"; };
+		A027CB7B155AA4C90025A0DF /* RMPaintStep.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = RMPaintStep.h; sourceTree = "<group>"; };
+		A027CB7C155AA4C90025A0DF /* RMPaintStep.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = RMPaintStep.m; sourceTree = "<group>"; };
+		A027CB7D155AA4C90025A0DF /* RMPaintSession.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = RMPaintSession.h; sourceTree = "<group>"; };
+		A027CB7E155AA4C90025A0DF /* RMPaintSession.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = RMPaintSession.m; sourceTree = "<group>"; };
+		A027CB86155AA4E00025A0DF /* RMCanvasView.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = RMCanvasView.h; sourceTree = "<group>"; };
+		A027CB8C155AA6720025A0DF /* RMPaintExample.app */ = {isa = PBXFileReference; explicitFileType = wrapper.application; includeInIndex = 0; path = RMPaintExample.app; sourceTree = BUILT_PRODUCTS_DIR; };
+		A027CB90155AA6720025A0DF /* CoreGraphics.framework */ = {isa = PBXFileReference; lastKnownFileType = wrapper.framework; name = CoreGraphics.framework; path = System/Library/Frameworks/CoreGraphics.framework; sourceTree = SDKROOT; };
+		A027CB94155AA6730025A0DF /* RMPaintExample-Info.plist */ = {isa = PBXFileReference; lastKnownFileType = text.plist.xml; path = "RMPaintExample-Info.plist"; sourceTree = "<group>"; };
+		A027CB96155AA6730025A0DF /* en */ = {isa = PBXFileReference; lastKnownFileType = text.plist.strings; name = en; path = en.lproj/InfoPlist.strings; sourceTree = "<group>"; };
+		A027CB98155AA6730025A0DF /* main.m */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.objc; path = main.m; sourceTree = "<group>"; };
+		A027CB9A155AA6730025A0DF /* RMPaintExample-Prefix.pch */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.h; path = "RMPaintExample-Prefix.pch"; sourceTree = "<group>"; };
+		A027CB9B155AA6730025A0DF /* RMAppDelegate.h */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.h; path = RMAppDelegate.h; sourceTree = "<group>"; };
+		A027CB9C155AA6730025A0DF /* RMAppDelegate.m */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.objc; path = RMAppDelegate.m; sourceTree = "<group>"; };
+		A027CB9E155AA6730025A0DF /* RMViewController.h */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.h; path = RMViewController.h; sourceTree = "<group>"; };
+		A027CB9F155AA6730025A0DF /* RMViewController.m */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.objc; path = RMViewController.m; sourceTree = "<group>"; };
+		A027CBAA155AA7CA0025A0DF /* brush.png */ = {isa = PBXFileReference; lastKnownFileType = image.png; path = brush.png; sourceTree = "<group>"; };
+		A027CBAD155AA9280025A0DF /* OpenGLES.framework */ = {isa = PBXFileReference; lastKnownFileType = wrapper.framework; name = OpenGLES.framework; path = System/Library/Frameworks/OpenGLES.framework; sourceTree = SDKROOT; };
+		A027CBAF155AA9360025A0DF /* QuartzCore.framework */ = {isa = PBXFileReference; lastKnownFileType = wrapper.framework; name = QuartzCore.framework; path = System/Library/Frameworks/QuartzCore.framework; sourceTree = SDKROOT; };
+/* End PBXFileReference section */
+
+/* Begin PBXFrameworksBuildPhase section */
+		A027CB4B155AA4900025A0DF /* Frameworks */ = {
+			isa = PBXFrameworksBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+				A027CBB0155AA9360025A0DF /* QuartzCore.framework in Frameworks */,
+				A027CBAE155AA9280025A0DF /* OpenGLES.framework in Frameworks */,
+				A027CB52155AA4900025A0DF /* Foundation.framework in Frameworks */,
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+		};
+		A027CB5A155AA4900025A0DF /* Frameworks */ = {
+			isa = PBXFrameworksBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+				A027CB60155AA4900025A0DF /* SenTestingKit.framework in Frameworks */,
+				A027CB62155AA4900025A0DF /* UIKit.framework in Frameworks */,
+				A027CB63155AA4900025A0DF /* Foundation.framework in Frameworks */,
+				A027CB66155AA4900025A0DF /* libRMPaint.a in Frameworks */,
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+		};
+		A027CB89155AA6720025A0DF /* Frameworks */ = {
+			isa = PBXFrameworksBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+				A027CBB2155AA94B0025A0DF /* QuartzCore.framework in Frameworks */,
+				A027CBB1155AA9460025A0DF /* OpenGLES.framework in Frameworks */,
+				A027CBAC155AA7F80025A0DF /* libRMPaint.a in Frameworks */,
+				A027CB8E155AA6720025A0DF /* UIKit.framework in Frameworks */,
+				A027CB8F155AA6720025A0DF /* Foundation.framework in Frameworks */,
+				A027CB91155AA6720025A0DF /* CoreGraphics.framework in Frameworks */,
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+		};
+/* End PBXFrameworksBuildPhase section */
+
+/* Begin PBXGroup section */
+		A027CB43155AA4900025A0DF = {
+			isa = PBXGroup;
+			children = (
+				A027CB53155AA4900025A0DF /* RMPaint */,
+				A027CB67155AA4900025A0DF /* RMPaintTests */,
+				A027CB92155AA6720025A0DF /* RMPaintExample */,
+				A027CB50155AA4900025A0DF /* Frameworks */,
+				A027CB4F155AA4900025A0DF /* Products */,
+			);
+			sourceTree = "<group>";
+		};
+		A027CB4F155AA4900025A0DF /* Products */ = {
+			isa = PBXGroup;
+			children = (
+				A027CB4E155AA4900025A0DF /* libRMPaint.a */,
+				A027CB5E155AA4900025A0DF /* RMPaintTests.octest */,
+				A027CB8C155AA6720025A0DF /* RMPaintExample.app */,
+			);
+			name = Products;
+			sourceTree = "<group>";
+		};
+		A027CB50155AA4900025A0DF /* Frameworks */ = {
+			isa = PBXGroup;
+			children = (
+				A027CBAF155AA9360025A0DF /* QuartzCore.framework */,
+				A027CBAD155AA9280025A0DF /* OpenGLES.framework */,
+				A027CB51155AA4900025A0DF /* Foundation.framework */,
+				A027CB5F155AA4900025A0DF /* SenTestingKit.framework */,
+				A027CB61155AA4900025A0DF /* UIKit.framework */,
+				A027CB90155AA6720025A0DF /* CoreGraphics.framework */,
+			);
+			name = Frameworks;
+			sourceTree = "<group>";
+		};
+		A027CB53155AA4900025A0DF /* RMPaint */ = {
+			isa = PBXGroup;
+			children = (
+				A027CB86155AA4E00025A0DF /* RMCanvasView.h */,
+				A027CB78155AA4C90025A0DF /* RMCanvasView.m */,
+				A027CB79155AA4C90025A0DF /* RMTouchCanvasView.h */,
+				A027CB7A155AA4C90025A0DF /* RMTouchCanvasView.m */,
+				A027CB7B155AA4C90025A0DF /* RMPaintStep.h */,
+				A027CB7C155AA4C90025A0DF /* RMPaintStep.m */,
+				A027CB7D155AA4C90025A0DF /* RMPaintSession.h */,
+				A027CB7E155AA4C90025A0DF /* RMPaintSession.m */,
+				A027CB54155AA4900025A0DF /* Supporting Files */,
+			);
+			path = RMPaint;
+			sourceTree = "<group>";
+		};
+		A027CB54155AA4900025A0DF /* Supporting Files */ = {
+			isa = PBXGroup;
+			children = (
+				A027CB55155AA4900025A0DF /* RMPaint-Prefix.pch */,
+			);
+			name = "Supporting Files";
+			sourceTree = "<group>";
+		};
+		A027CB67155AA4900025A0DF /* RMPaintTests */ = {
+			isa = PBXGroup;
+			children = (
+				A027CB68155AA4900025A0DF /* Supporting Files */,
+			);
+			path = RMPaintTests;
+			sourceTree = "<group>";
+		};
+		A027CB68155AA4900025A0DF /* Supporting Files */ = {
+			isa = PBXGroup;
+			children = (
+				A027CB69155AA4900025A0DF /* RMPaintTests-Info.plist */,
+				A027CB6A155AA4900025A0DF /* InfoPlist.strings */,
+			);
+			name = "Supporting Files";
+			sourceTree = "<group>";
+		};
+		A027CB92155AA6720025A0DF /* RMPaintExample */ = {
+			isa = PBXGroup;
+			children = (
+				A027CBAA155AA7CA0025A0DF /* brush.png */,
+				A027CB9B155AA6730025A0DF /* RMAppDelegate.h */,
+				A027CB9C155AA6730025A0DF /* RMAppDelegate.m */,
+				A027CB9E155AA6730025A0DF /* RMViewController.h */,
+				A027CB9F155AA6730025A0DF /* RMViewController.m */,
+				A027CB93155AA6730025A0DF /* Supporting Files */,
+			);
+			path = RMPaintExample;
+			sourceTree = "<group>";
+		};
+		A027CB93155AA6730025A0DF /* Supporting Files */ = {
+			isa = PBXGroup;
+			children = (
+				A027CB94155AA6730025A0DF /* RMPaintExample-Info.plist */,
+				A027CB95155AA6730025A0DF /* InfoPlist.strings */,
+				A027CB98155AA6730025A0DF /* main.m */,
+				A027CB9A155AA6730025A0DF /* RMPaintExample-Prefix.pch */,
+			);
+			name = "Supporting Files";
+			sourceTree = "<group>";
+		};
+/* End PBXGroup section */
+
+/* Begin PBXHeadersBuildPhase section */
+		A027CB4C155AA4900025A0DF /* Headers */ = {
+			isa = PBXHeadersBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+				A027CB80155AA4C90025A0DF /* RMTouchCanvasView.h in Headers */,
+				A027CB82155AA4C90025A0DF /* RMPaintStep.h in Headers */,
+				A027CB84155AA4C90025A0DF /* RMPaintSession.h in Headers */,
+				A027CB87155AA4E00025A0DF /* RMCanvasView.h in Headers */,
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+		};
+/* End PBXHeadersBuildPhase section */
+
+/* Begin PBXNativeTarget section */
+		A027CB4D155AA4900025A0DF /* RMPaint */ = {
+			isa = PBXNativeTarget;
+			buildConfigurationList = A027CB72155AA4900025A0DF /* Build configuration list for PBXNativeTarget "RMPaint" */;
+			buildPhases = (
+				A027CB4A155AA4900025A0DF /* Sources */,
+				A027CB4B155AA4900025A0DF /* Frameworks */,
+				A027CB4C155AA4900025A0DF /* Headers */,
+			);
+			buildRules = (
+			);
+			dependencies = (
+			);
+			name = RMPaint;
+			productName = RMPaint;
+			productReference = A027CB4E155AA4900025A0DF /* libRMPaint.a */;
+			productType = "com.apple.product-type.library.static";
+		};
+		A027CB5D155AA4900025A0DF /* RMPaintTests */ = {
+			isa = PBXNativeTarget;
+			buildConfigurationList = A027CB75155AA4900025A0DF /* Build configuration list for PBXNativeTarget "RMPaintTests" */;
+			buildPhases = (
+				A027CB59155AA4900025A0DF /* Sources */,
+				A027CB5A155AA4900025A0DF /* Frameworks */,
+				A027CB5B155AA4900025A0DF /* Resources */,
+				A027CB5C155AA4900025A0DF /* ShellScript */,
+			);
+			buildRules = (
+			);
+			dependencies = (
+				A027CB65155AA4900025A0DF /* PBXTargetDependency */,
+			);
+			name = RMPaintTests;
+			productName = RMPaintTests;
+			productReference = A027CB5E155AA4900025A0DF /* RMPaintTests.octest */;
+			productType = "com.apple.product-type.bundle";
+		};
+		A027CB8B155AA6720025A0DF /* RMPaintExample */ = {
+			isa = PBXNativeTarget;
+			buildConfigurationList = A027CBA7155AA6730025A0DF /* Build configuration list for PBXNativeTarget "RMPaintExample" */;
+			buildPhases = (
+				A027CB88155AA6720025A0DF /* Sources */,
+				A027CB89155AA6720025A0DF /* Frameworks */,
+				A027CB8A155AA6720025A0DF /* Resources */,
+			);
+			buildRules = (
+			);
+			dependencies = (
+			);
+			name = RMPaintExample;
+			productName = RMPaintExample;
+			productReference = A027CB8C155AA6720025A0DF /* RMPaintExample.app */;
+			productType = "com.apple.product-type.application";
+		};
+/* End PBXNativeTarget section */
+
+/* Begin PBXProject section */
+		A027CB45155AA4900025A0DF /* Project object */ = {
+			isa = PBXProject;
+			attributes = {
+				LastUpgradeCheck = 0430;
+				ORGANIZATIONNAME = "Robot Media SL";
+			};
+			buildConfigurationList = A027CB48155AA4900025A0DF /* Build configuration list for PBXProject "RMPaint" */;
+			compatibilityVersion = "Xcode 3.2";
+			developmentRegion = English;
+			hasScannedForEncodings = 0;
+			knownRegions = (
+				en,
+			);
+			mainGroup = A027CB43155AA4900025A0DF;
+			productRefGroup = A027CB4F155AA4900025A0DF /* Products */;
+			projectDirPath = "";
+			projectRoot = "";
+			targets = (
+				A027CB4D155AA4900025A0DF /* RMPaint */,
+				A027CB5D155AA4900025A0DF /* RMPaintTests */,
+				A027CB8B155AA6720025A0DF /* RMPaintExample */,
+			);
+		};
+/* End PBXProject section */
+
+/* Begin PBXResourcesBuildPhase section */
+		A027CB5B155AA4900025A0DF /* Resources */ = {
+			isa = PBXResourcesBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+				A027CB6C155AA4900025A0DF /* InfoPlist.strings in Resources */,
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+		};
+		A027CB8A155AA6720025A0DF /* Resources */ = {
+			isa = PBXResourcesBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+				A027CB97155AA6730025A0DF /* InfoPlist.strings in Resources */,
+				A027CBAB155AA7CA0025A0DF /* brush.png in Resources */,
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+		};
+/* End PBXResourcesBuildPhase section */
+
+/* Begin PBXShellScriptBuildPhase section */
+		A027CB5C155AA4900025A0DF /* ShellScript */ = {
+			isa = PBXShellScriptBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+			);
+			inputPaths = (
+			);
+			outputPaths = (
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+			shellPath = /bin/sh;
+			shellScript = "# Run the unit tests in this test bundle.\n\"${SYSTEM_DEVELOPER_DIR}/Tools/RunUnitTests\"\n";
+		};
+/* End PBXShellScriptBuildPhase section */
+
+/* Begin PBXSourcesBuildPhase section */
+		A027CB4A155AA4900025A0DF /* Sources */ = {
+			isa = PBXSourcesBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+				A027CB7F155AA4C90025A0DF /* RMCanvasView.m in Sources */,
+				A027CB81155AA4C90025A0DF /* RMTouchCanvasView.m in Sources */,
+				A027CB83155AA4C90025A0DF /* RMPaintStep.m in Sources */,
+				A027CB85155AA4C90025A0DF /* RMPaintSession.m in Sources */,
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+		};
+		A027CB59155AA4900025A0DF /* Sources */ = {
+			isa = PBXSourcesBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+		};
+		A027CB88155AA6720025A0DF /* Sources */ = {
+			isa = PBXSourcesBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+				A027CB99155AA6730025A0DF /* main.m in Sources */,
+				A027CB9D155AA6730025A0DF /* RMAppDelegate.m in Sources */,
+				A027CBA0155AA6730025A0DF /* RMViewController.m in Sources */,
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+		};
+/* End PBXSourcesBuildPhase section */
+
+/* Begin PBXTargetDependency section */
+		A027CB65155AA4900025A0DF /* PBXTargetDependency */ = {
+			isa = PBXTargetDependency;
+			target = A027CB4D155AA4900025A0DF /* RMPaint */;
+			targetProxy = A027CB64155AA4900025A0DF /* PBXContainerItemProxy */;
+		};
+/* End PBXTargetDependency section */
+
+/* Begin PBXVariantGroup section */
+		A027CB6A155AA4900025A0DF /* InfoPlist.strings */ = {
+			isa = PBXVariantGroup;
+			children = (
+				A027CB6B155AA4900025A0DF /* en */,
+			);
+			name = InfoPlist.strings;
+			sourceTree = "<group>";
+		};
+		A027CB95155AA6730025A0DF /* InfoPlist.strings */ = {
+			isa = PBXVariantGroup;
+			children = (
+				A027CB96155AA6730025A0DF /* en */,
+			);
+			name = InfoPlist.strings;
+			sourceTree = "<group>";
+		};
+/* End PBXVariantGroup section */
+
+/* Begin XCBuildConfiguration section */
+		A027CB70155AA4900025A0DF /* Debug */ = {
+			isa = XCBuildConfiguration;
+			buildSettings = {
+				ALWAYS_SEARCH_USER_PATHS = NO;
+				ARCHS = "$(ARCHS_STANDARD_32_BIT)";
+				CLANG_ENABLE_OBJC_ARC = YES;
+				COPY_PHASE_STRIP = NO;
+				GCC_C_LANGUAGE_STANDARD = gnu99;
+				GCC_DYNAMIC_NO_PIC = NO;
+				GCC_OPTIMIZATION_LEVEL = 0;
+				GCC_PREPROCESSOR_DEFINITIONS = (
+					"DEBUG=1",
+					"$(inherited)",
+				);
+				GCC_SYMBOLS_PRIVATE_EXTERN = NO;
+				GCC_VERSION = com.apple.compilers.llvm.clang.1_0;
+				GCC_WARN_ABOUT_RETURN_TYPE = YES;
+				GCC_WARN_UNINITIALIZED_AUTOS = YES;
+				GCC_WARN_UNUSED_VARIABLE = YES;
+				IPHONEOS_DEPLOYMENT_TARGET = 5.1;
+				SDKROOT = iphoneos;
+			};
+			name = Debug;
+		};
+		A027CB71155AA4900025A0DF /* Release */ = {
+			isa = XCBuildConfiguration;
+			buildSettings = {
+				ALWAYS_SEARCH_USER_PATHS = NO;
+				ARCHS = "$(ARCHS_STANDARD_32_BIT)";
+				CLANG_ENABLE_OBJC_ARC = YES;
+				COPY_PHASE_STRIP = YES;
+				GCC_C_LANGUAGE_STANDARD = gnu99;
+				GCC_VERSION = com.apple.compilers.llvm.clang.1_0;
+				GCC_WARN_ABOUT_RETURN_TYPE = YES;
+				GCC_WARN_UNINITIALIZED_AUTOS = YES;
+				GCC_WARN_UNUSED_VARIABLE = YES;
+				IPHONEOS_DEPLOYMENT_TARGET = 5.1;
+				SDKROOT = iphoneos;
+				VALIDATE_PRODUCT = YES;
+			};
+			name = Release;
+		};
+		A027CB73155AA4900025A0DF /* Debug */ = {
+			isa = XCBuildConfiguration;
+			buildSettings = {
+				DSTROOT = /tmp/RMPaint.dst;
+				GCC_PRECOMPILE_PREFIX_HEADER = YES;
+				GCC_PREFIX_HEADER = "RMPaint/RMPaint-Prefix.pch";
+				OTHER_LDFLAGS = "-ObjC";
+				PRODUCT_NAME = "$(TARGET_NAME)";
+				SKIP_INSTALL = YES;
+			};
+			name = Debug;
+		};
+		A027CB74155AA4900025A0DF /* Release */ = {
+			isa = XCBuildConfiguration;
+			buildSettings = {
+				DSTROOT = /tmp/RMPaint.dst;
+				GCC_PRECOMPILE_PREFIX_HEADER = YES;
+				GCC_PREFIX_HEADER = "RMPaint/RMPaint-Prefix.pch";
+				OTHER_LDFLAGS = "-ObjC";
+				PRODUCT_NAME = "$(TARGET_NAME)";
+				SKIP_INSTALL = YES;
+			};
+			name = Release;
+		};
+		A027CB76155AA4900025A0DF /* Debug */ = {
+			isa = XCBuildConfiguration;
+			buildSettings = {
+				FRAMEWORK_SEARCH_PATHS = (
+					"$(SDKROOT)/Developer/Library/Frameworks",
+					"$(DEVELOPER_LIBRARY_DIR)/Frameworks",
+				);
+				GCC_PRECOMPILE_PREFIX_HEADER = YES;
+				GCC_PREFIX_HEADER = "RMPaint/RMPaint-Prefix.pch";
+				INFOPLIST_FILE = "RMPaintTests/RMPaintTests-Info.plist";
+				PRODUCT_NAME = "$(TARGET_NAME)";
+				WRAPPER_EXTENSION = octest;
+			};
+			name = Debug;
+		};
+		A027CB77155AA4900025A0DF /* Release */ = {
+			isa = XCBuildConfiguration;
+			buildSettings = {
+				FRAMEWORK_SEARCH_PATHS = (
+					"$(SDKROOT)/Developer/Library/Frameworks",
+					"$(DEVELOPER_LIBRARY_DIR)/Frameworks",
+				);
+				GCC_PRECOMPILE_PREFIX_HEADER = YES;
+				GCC_PREFIX_HEADER = "RMPaint/RMPaint-Prefix.pch";
+				INFOPLIST_FILE = "RMPaintTests/RMPaintTests-Info.plist";
+				PRODUCT_NAME = "$(TARGET_NAME)";
+				WRAPPER_EXTENSION = octest;
+			};
+			name = Release;
+		};
+		A027CBA8155AA6730025A0DF /* Debug */ = {
+			isa = XCBuildConfiguration;
+			buildSettings = {
+				"CODE_SIGN_IDENTITY[sdk=iphoneos*]" = "iPhone Developer";
+				FRAMEWORK_SEARCH_PATHS = (
+					"$(inherited)",
+					"\"$(SYSTEM_APPS_DIR)/Xcode.app/Contents/Developer/Library/Frameworks\"",
+				);
+				GCC_PRECOMPILE_PREFIX_HEADER = YES;
+				GCC_PREFIX_HEADER = "RMPaintExample/RMPaintExample-Prefix.pch";
+				INFOPLIST_FILE = "RMPaintExample/RMPaintExample-Info.plist";
+				PRODUCT_NAME = "$(TARGET_NAME)";
+				TARGETED_DEVICE_FAMILY = "1,2";
+				WRAPPER_EXTENSION = app;
+			};
+			name = Debug;
+		};
+		A027CBA9155AA6730025A0DF /* Release */ = {
+			isa = XCBuildConfiguration;
+			buildSettings = {
+				"CODE_SIGN_IDENTITY[sdk=iphoneos*]" = "iPhone Developer";
+				FRAMEWORK_SEARCH_PATHS = (
+					"$(inherited)",
+					"\"$(SYSTEM_APPS_DIR)/Xcode.app/Contents/Developer/Library/Frameworks\"",
+				);
+				GCC_PRECOMPILE_PREFIX_HEADER = YES;
+				GCC_PREFIX_HEADER = "RMPaintExample/RMPaintExample-Prefix.pch";
+				INFOPLIST_FILE = "RMPaintExample/RMPaintExample-Info.plist";
+				OTHER_CFLAGS = "-DNS_BLOCK_ASSERTIONS=1";
+				PRODUCT_NAME = "$(TARGET_NAME)";
+				TARGETED_DEVICE_FAMILY = "1,2";
+				WRAPPER_EXTENSION = app;
+			};
+			name = Release;
+		};
+/* End XCBuildConfiguration section */
+
+/* Begin XCConfigurationList section */
+		A027CB48155AA4900025A0DF /* Build configuration list for PBXProject "RMPaint" */ = {
+			isa = XCConfigurationList;
+			buildConfigurations = (
+				A027CB70155AA4900025A0DF /* Debug */,
+				A027CB71155AA4900025A0DF /* Release */,
+			);
+			defaultConfigurationIsVisible = 0;
+			defaultConfigurationName = Release;
+		};
+		A027CB72155AA4900025A0DF /* Build configuration list for PBXNativeTarget "RMPaint" */ = {
+			isa = XCConfigurationList;
+			buildConfigurations = (
+				A027CB73155AA4900025A0DF /* Debug */,
+				A027CB74155AA4900025A0DF /* Release */,
+			);
+			defaultConfigurationIsVisible = 0;
+		};
+		A027CB75155AA4900025A0DF /* Build configuration list for PBXNativeTarget "RMPaintTests" */ = {
+			isa = XCConfigurationList;
+			buildConfigurations = (
+				A027CB76155AA4900025A0DF /* Debug */,
+				A027CB77155AA4900025A0DF /* Release */,
+			);
+			defaultConfigurationIsVisible = 0;
+		};
+		A027CBA7155AA6730025A0DF /* Build configuration list for PBXNativeTarget "RMPaintExample" */ = {
+			isa = XCConfigurationList;
+			buildConfigurations = (
+				A027CBA8155AA6730025A0DF /* Debug */,
+				A027CBA9155AA6730025A0DF /* Release */,
+			);
+			defaultConfigurationIsVisible = 0;
+		};
+/* End XCConfigurationList section */
+	};
+	rootObject = A027CB45155AA4900025A0DF /* Project object */;
+}

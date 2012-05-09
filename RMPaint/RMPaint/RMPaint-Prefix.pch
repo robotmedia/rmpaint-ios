@@ -1,0 +1,7 @@
+//
+// Prefix header for all source files of the 'RMPaint' target in the 'RMPaint' project
+//
+
+#ifdef __OBJC__
+    #import <Foundation/Foundation.h>
+#endif
