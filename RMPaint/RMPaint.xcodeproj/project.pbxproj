@@ -34,6 +34,7 @@
 		A027CBB0155AA9360025A0DF /* QuartzCore.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = A027CBAF155AA9360025A0DF /* QuartzCore.framework */; };
 		A027CBB1155AA9460025A0DF /* OpenGLES.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = A027CBAD155AA9280025A0DF /* OpenGLES.framework */; };
 		A027CBB2155AA94B0025A0DF /* QuartzCore.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = A027CBAF155AA9360025A0DF /* QuartzCore.framework */; };
+		A027CBDB155AD48E0025A0DF /* RMPaint.h in Headers */ = {isa = PBXBuildFile; fileRef = A027CBD9155AD48E0025A0DF /* RMPaint.h */; };
 /* End PBXBuildFile section */
 
 /* Begin PBXContainerItemProxy section */
@@ -76,6 +77,7 @@
 		A027CBAA155AA7CA0025A0DF /* brush.png */ = {isa = PBXFileReference; lastKnownFileType = image.png; path = brush.png; sourceTree = "<group>"; };
 		A027CBAD155AA9280025A0DF /* OpenGLES.framework */ = {isa = PBXFileReference; lastKnownFileType = wrapper.framework; name = OpenGLES.framework; path = System/Library/Frameworks/OpenGLES.framework; sourceTree = SDKROOT; };
 		A027CBAF155AA9360025A0DF /* QuartzCore.framework */ = {isa = PBXFileReference; lastKnownFileType = wrapper.framework; name = QuartzCore.framework; path = System/Library/Frameworks/QuartzCore.framework; sourceTree = SDKROOT; };
+		A027CBD9155AD48E0025A0DF /* RMPaint.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = RMPaint.h; sourceTree = "<group>"; };
 /* End PBXFileReference section */
 
 /* Begin PBXFrameworksBuildPhase section */
@@ -162,6 +164,7 @@
 				A027CB7D155AA4C90025A0DF /* RMPaintSession.h */,
 				A027CB7E155AA4C90025A0DF /* RMPaintSession.m */,
 				A027CB54155AA4900025A0DF /* Supporting Files */,
+				A027CBD9155AD48E0025A0DF /* RMPaint.h */,
 			);
 			path = RMPaint;
 			sourceTree = "<group>";
@@ -226,6 +229,7 @@
 				A027CB82155AA4C90025A0DF /* RMPaintStep.h in Headers */,
 				A027CB84155AA4C90025A0DF /* RMPaintSession.h in Headers */,
 				A027CB87155AA4E00025A0DF /* RMCanvasView.h in Headers */,
+				A027CBDB155AD48E0025A0DF /* RMPaint.h in Headers */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
 		};
@@ -558,6 +562,7 @@
 				A027CB74155AA4900025A0DF /* Release */,
 			);
 			defaultConfigurationIsVisible = 0;
+			defaultConfigurationName = Release;
 		};
 		A027CB75155AA4900025A0DF /* Build configuration list for PBXNativeTarget "RMPaintTests" */ = {
 			isa = XCConfigurationList;
@@ -566,6 +571,7 @@
 				A027CB77155AA4900025A0DF /* Release */,
 			);
 			defaultConfigurationIsVisible = 0;
+			defaultConfigurationName = Release;
 		};
 		A027CBA7155AA6730025A0DF /* Build configuration list for PBXNativeTarget "RMPaintExample" */ = {
 			isa = XCConfigurationList;
@@ -574,6 +580,7 @@
 				A027CBA9155AA6730025A0DF /* Release */,
 			);
 			defaultConfigurationIsVisible = 0;
+			defaultConfigurationName = Release;
 		};
 /* End XCConfigurationList section */
 	};

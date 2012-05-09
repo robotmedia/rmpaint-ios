@@ -7,7 +7,6 @@
 //
 
 #import "RMViewController.h"
-#import "RMTouchCanvasView.h"
 
 #define HISTORY_KEY @"history"
 
