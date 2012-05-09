@@ -34,7 +34,7 @@
 		A027CBB0155AA9360025A0DF /* QuartzCore.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = A027CBAF155AA9360025A0DF /* QuartzCore.framework */; };
 		A027CBB1155AA9460025A0DF /* OpenGLES.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = A027CBAD155AA9280025A0DF /* OpenGLES.framework */; };
 		A027CBB2155AA94B0025A0DF /* QuartzCore.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = A027CBAF155AA9360025A0DF /* QuartzCore.framework */; };
-		A027CBDB155AD48E0025A0DF /* RMPaint.h in Headers */ = {isa = PBXBuildFile; fileRef = A027CBD9155AD48E0025A0DF /* RMPaint.h */; };
+		A027CBDB155AD48E0025A0DF /* RMPaint.h in Headers */ = {isa = PBXBuildFile; fileRef = A027CBD9155AD48E0025A0DF /* RMPaint.h */; settings = {ATTRIBUTES = (Public, ); }; };
 /* End PBXBuildFile section */
 
 /* Begin PBXContainerItemProxy section */
