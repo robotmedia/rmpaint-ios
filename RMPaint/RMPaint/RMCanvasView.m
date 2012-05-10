@@ -76,6 +76,13 @@
 // Drawings a line onscreen based on where the user touches
 - (void) renderLineFromPoint:(CGPoint)start toPoint:(CGPoint)end
 {
+    RMPaintStep* step = [[RMPaintStep alloc] initWithColor:self.brushColor start:start end:end];
+    
+    // Convert touch point from UIView referential to OpenGL one (upside-down flip)
+    CGRect bounds = [self bounds];    
+    start.y = bounds.size.height - start.y;
+    end.y = bounds.size.height - end.y;
+    
 	static GLfloat*		vertexBuffer = NULL;
 	static NSUInteger	vertexMax = 64;
 	NSUInteger			vertexCount = 0,
@@ -117,7 +124,6 @@
 	glBindRenderbufferOES(GL_RENDERBUFFER_OES, viewRenderbuffer);
 	[context presentRenderbuffer:GL_RENDERBUFFER_OES];
     
-    RMPaintStep* step = [[RMPaintStep alloc] initWithColor:self.brushColor start:start end:end];
     [self.delegate canvasView:self painted:step];
 }
 

@@ -2,8 +2,8 @@
 
 @interface RMTouchCanvasView : RMCanvasView {
     BOOL firstTouch;
-    CGPoint	location;
-    CGPoint	previousLocation;
 }
+
+- (void) renderLineFromTouch:(UITouch*)touch;
 
 @end
