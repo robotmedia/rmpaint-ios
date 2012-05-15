@@ -7,5 +7,5 @@
 //
 
 #import "RMCanvasView.h"
-#import "RMTouchCanvasView.h"
+#import "RMGestureCanvasView.h"
 #import "RMPaintSession.h"

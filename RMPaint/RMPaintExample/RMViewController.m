@@ -16,7 +16,7 @@
 {
     [super viewDidLoad];
     session = [[RMPaintSession alloc] initWithDefaultsWithKey:HISTORY_KEY];     
-    RMCanvasView* canvas = [[RMTouchCanvasView alloc] initWithFrame:self.view.frame];
+    RMCanvasView* canvas = [[RMGestureCanvasView alloc] initWithFrame:self.view.frame];
     [self.view addSubview:canvas];
     [session paintInCanvas:canvas];
     canvas.delegate = self;

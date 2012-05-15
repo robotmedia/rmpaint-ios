@@ -1,25 +1,36 @@
+//	This file is part of RMPaint.
 //
-#import "RMTouchCanvasView.h"
+//	RMPaint is free software: you can redistribute it and/or modify
+//	it under the terms of the GNU Lesser Public License as published by
+//	the Free Software Foundation, either version 3 of the License, or
+//	(at your option) any later version.
+//
+//	RMPaint is distributed in the hope that it will be useful,
+//	but WITHOUT ANY WARRANTY; without even the implied warranty of
+//	MERCHANTABILITY or FITNESS FOR A PARTICULAR PURPOSE.  See the
+//	GNU Lesser Public License for more details.
+//
+//	You should have received a copy of the GNU Lesser Public License
+//	along with RMPaint.  If not, see <http://www.gnu.org/licenses/>.
 
-@implementation RMTouchCanvasView
+#import "RMGestureCanvasView.h"
+#import "RMPaintGestureRecognizer.h"
 
-- (void)touchesBegan:(NSSet *)touches withEvent:(UIEvent *)event
-{
-	firstTouch = YES;
+@implementation RMGestureCanvasView
+
+- (id)initWithFrame:(CGRect)frame {
+    if ((self = [super initWithFrame:frame])) {
+        RMPaintGestureRecognizer* recognizer = [[RMPaintGestureRecognizer alloc] initWithTarget:self action:@selector(handleDrag:)];
+        [self addGestureRecognizer:recognizer];
+	}
+	return self;
 }
 
-- (void)touchesMoved:(NSSet *)touches withEvent:(UIEvent *)event
-{  
-    firstTouch = NO;
-	UITouch* touch = [[event touchesForView:self] anyObject];
-    [self renderLineFromTouch:touch];
-}
-
-- (void)touchesEnded:(NSSet *)touches withEvent:(UIEvent *)event
-{
-	if (!firstTouch) return;    
-    UITouch* touch = [[event touchesForView:self] anyObject];
-    [self renderLineFromTouch:touch];
+- (void) handleDrag:(RMPaintGestureRecognizer*)sender {
+    NSSet* touches = sender.touches;
+    for (UITouch* touch in touches) {
+        [self renderLineFromTouch:touch];        
+    }
 }
 
 - (void) renderLineFromTouch:(UITouch*)touch {

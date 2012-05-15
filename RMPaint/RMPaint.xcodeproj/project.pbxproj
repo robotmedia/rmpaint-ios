@@ -14,8 +14,8 @@
 		A027CB66155AA4900025A0DF /* libRMPaint.a in Frameworks */ = {isa = PBXBuildFile; fileRef = A027CB4E155AA4900025A0DF /* libRMPaint.a */; };
 		A027CB6C155AA4900025A0DF /* InfoPlist.strings in Resources */ = {isa = PBXBuildFile; fileRef = A027CB6A155AA4900025A0DF /* InfoPlist.strings */; };
 		A027CB7F155AA4C90025A0DF /* RMCanvasView.m in Sources */ = {isa = PBXBuildFile; fileRef = A027CB78155AA4C90025A0DF /* RMCanvasView.m */; };
-		A027CB80155AA4C90025A0DF /* RMTouchCanvasView.h in Headers */ = {isa = PBXBuildFile; fileRef = A027CB79155AA4C90025A0DF /* RMTouchCanvasView.h */; settings = {ATTRIBUTES = (Public, ); }; };
-		A027CB81155AA4C90025A0DF /* RMTouchCanvasView.m in Sources */ = {isa = PBXBuildFile; fileRef = A027CB7A155AA4C90025A0DF /* RMTouchCanvasView.m */; };
+		A027CB80155AA4C90025A0DF /* RMGestureCanvasView.h in Headers */ = {isa = PBXBuildFile; fileRef = A027CB79155AA4C90025A0DF /* RMGestureCanvasView.h */; settings = {ATTRIBUTES = (Public, ); }; };
+		A027CB81155AA4C90025A0DF /* RMGestureCanvasView.m in Sources */ = {isa = PBXBuildFile; fileRef = A027CB7A155AA4C90025A0DF /* RMGestureCanvasView.m */; };
 		A027CB82155AA4C90025A0DF /* RMPaintStep.h in Headers */ = {isa = PBXBuildFile; fileRef = A027CB7B155AA4C90025A0DF /* RMPaintStep.h */; settings = {ATTRIBUTES = (Public, ); }; };
 		A027CB83155AA4C90025A0DF /* RMPaintStep.m in Sources */ = {isa = PBXBuildFile; fileRef = A027CB7C155AA4C90025A0DF /* RMPaintStep.m */; };
 		A027CB84155AA4C90025A0DF /* RMPaintSession.h in Headers */ = {isa = PBXBuildFile; fileRef = A027CB7D155AA4C90025A0DF /* RMPaintSession.h */; settings = {ATTRIBUTES = (Public, ); }; };
@@ -35,6 +35,8 @@
 		A027CBB1155AA9460025A0DF /* OpenGLES.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = A027CBAD155AA9280025A0DF /* OpenGLES.framework */; };
 		A027CBB2155AA94B0025A0DF /* QuartzCore.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = A027CBAF155AA9360025A0DF /* QuartzCore.framework */; };
 		A027CBDB155AD48E0025A0DF /* RMPaint.h in Headers */ = {isa = PBXBuildFile; fileRef = A027CBD9155AD48E0025A0DF /* RMPaint.h */; settings = {ATTRIBUTES = (Public, ); }; };
+		A0FF0B4915623B2600FA0AC4 /* RMPaintGestureRecognizer.h in Headers */ = {isa = PBXBuildFile; fileRef = A0FF0B4715623B2600FA0AC4 /* RMPaintGestureRecognizer.h */; settings = {ATTRIBUTES = (); }; };
+		A0FF0B4A15623B2600FA0AC4 /* RMPaintGestureRecognizer.m in Sources */ = {isa = PBXBuildFile; fileRef = A0FF0B4815623B2600FA0AC4 /* RMPaintGestureRecognizer.m */; };
 /* End PBXBuildFile section */
 
 /* Begin PBXContainerItemProxy section */
@@ -57,8 +59,8 @@
 		A027CB69155AA4900025A0DF /* RMPaintTests-Info.plist */ = {isa = PBXFileReference; lastKnownFileType = text.plist.xml; path = "RMPaintTests-Info.plist"; sourceTree = "<group>"; };
 		A027CB6B155AA4900025A0DF /* en */ = {isa = PBXFileReference; lastKnownFileType = text.plist.strings; name = en; path = en.lproj/InfoPlist.strings; sourceTree = "<group>"; };
 		A027CB78155AA4C90025A0DF /* RMCanvasView.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = RMCanvasView.m; sourceTree = "<group>"; };
-		A027CB79155AA4C90025A0DF /* RMTouchCanvasView.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = RMTouchCanvasView.h; sourceTree = "<group>"; };
-		A027CB7A155AA4C90025A0DF /* RMTouchCanvasView.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = RMTouchCanvasView.m; sourceTree = "<group>"; };
+		A027CB79155AA4C90025A0DF /* RMGestureCanvasView.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = RMGestureCanvasView.h; sourceTree = "<group>"; };
+		A027CB7A155AA4C90025A0DF /* RMGestureCanvasView.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = RMGestureCanvasView.m; sourceTree = "<group>"; };
 		A027CB7B155AA4C90025A0DF /* RMPaintStep.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = RMPaintStep.h; sourceTree = "<group>"; };
 		A027CB7C155AA4C90025A0DF /* RMPaintStep.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = RMPaintStep.m; sourceTree = "<group>"; };
 		A027CB7D155AA4C90025A0DF /* RMPaintSession.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = RMPaintSession.h; sourceTree = "<group>"; };
@@ -78,6 +80,8 @@
 		A027CBAD155AA9280025A0DF /* OpenGLES.framework */ = {isa = PBXFileReference; lastKnownFileType = wrapper.framework; name = OpenGLES.framework; path = System/Library/Frameworks/OpenGLES.framework; sourceTree = SDKROOT; };
 		A027CBAF155AA9360025A0DF /* QuartzCore.framework */ = {isa = PBXFileReference; lastKnownFileType = wrapper.framework; name = QuartzCore.framework; path = System/Library/Frameworks/QuartzCore.framework; sourceTree = SDKROOT; };
 		A027CBD9155AD48E0025A0DF /* RMPaint.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = RMPaint.h; sourceTree = "<group>"; };
+		A0FF0B4715623B2600FA0AC4 /* RMPaintGestureRecognizer.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = RMPaintGestureRecognizer.h; sourceTree = "<group>"; };
+		A0FF0B4815623B2600FA0AC4 /* RMPaintGestureRecognizer.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = RMPaintGestureRecognizer.m; sourceTree = "<group>"; };
 /* End PBXFileReference section */
 
 /* Begin PBXFrameworksBuildPhase section */
@@ -157,14 +161,16 @@
 			children = (
 				A027CB86155AA4E00025A0DF /* RMCanvasView.h */,
 				A027CB78155AA4C90025A0DF /* RMCanvasView.m */,
-				A027CB79155AA4C90025A0DF /* RMTouchCanvasView.h */,
-				A027CB7A155AA4C90025A0DF /* RMTouchCanvasView.m */,
-				A027CB7B155AA4C90025A0DF /* RMPaintStep.h */,
-				A027CB7C155AA4C90025A0DF /* RMPaintStep.m */,
+				A0FF0B4715623B2600FA0AC4 /* RMPaintGestureRecognizer.h */,
+				A0FF0B4815623B2600FA0AC4 /* RMPaintGestureRecognizer.m */,
+				A027CBD9155AD48E0025A0DF /* RMPaint.h */,
 				A027CB7D155AA4C90025A0DF /* RMPaintSession.h */,
 				A027CB7E155AA4C90025A0DF /* RMPaintSession.m */,
+				A027CB7B155AA4C90025A0DF /* RMPaintStep.h */,
+				A027CB7C155AA4C90025A0DF /* RMPaintStep.m */,
+				A027CB79155AA4C90025A0DF /* RMGestureCanvasView.h */,
+				A027CB7A155AA4C90025A0DF /* RMGestureCanvasView.m */,
 				A027CB54155AA4900025A0DF /* Supporting Files */,
-				A027CBD9155AD48E0025A0DF /* RMPaint.h */,
 			);
 			path = RMPaint;
 			sourceTree = "<group>";
@@ -225,11 +231,12 @@
 			isa = PBXHeadersBuildPhase;
 			buildActionMask = 2147483647;
 			files = (
-				A027CB80155AA4C90025A0DF /* RMTouchCanvasView.h in Headers */,
+				A027CB80155AA4C90025A0DF /* RMGestureCanvasView.h in Headers */,
 				A027CB82155AA4C90025A0DF /* RMPaintStep.h in Headers */,
 				A027CB84155AA4C90025A0DF /* RMPaintSession.h in Headers */,
 				A027CB87155AA4E00025A0DF /* RMCanvasView.h in Headers */,
 				A027CBDB155AD48E0025A0DF /* RMPaint.h in Headers */,
+				A0FF0B4915623B2600FA0AC4 /* RMPaintGestureRecognizer.h in Headers */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
 		};
@@ -359,9 +366,10 @@
 			buildActionMask = 2147483647;
 			files = (
 				A027CB7F155AA4C90025A0DF /* RMCanvasView.m in Sources */,
-				A027CB81155AA4C90025A0DF /* RMTouchCanvasView.m in Sources */,
+				A027CB81155AA4C90025A0DF /* RMGestureCanvasView.m in Sources */,
 				A027CB83155AA4C90025A0DF /* RMPaintStep.m in Sources */,
 				A027CB85155AA4C90025A0DF /* RMPaintSession.m in Sources */,
+				A0FF0B4A15623B2600FA0AC4 /* RMPaintGestureRecognizer.m in Sources */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
 		};
